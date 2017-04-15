@@ -31,7 +31,7 @@
 
                 <!-- Title -->
                 <span class="mdl-layout-title">
-                    <a href="#top" id="title">DAWN.</a>
+                    <a href="#top" id="toolbar-title">DAWN.</a>
                 </span>
                 <!-- Spacer -->
                 <div class="mdl-layout-spacer"></div>
@@ -39,7 +39,10 @@
                 <!-- Navigation -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     <a class="mdl-navigation__link" href="#vision">Vision</a>
-                    <a class="mdl-navigation__link" href="#services">Services</a>
+                    <a class="mdl-navigation__link" href="#hardware">Hardware</a>
+                    <a class="mdl-navigation__link" href="#os">OS</a>
+                    <a class="mdl-navigation__link" href="#blockchains">Blockchains</a>
+                    <a class="mdl-navigation__link" href="#applications">Applications</a>
                 </nav>
 
             </div>
@@ -49,11 +52,16 @@
         <!-- Drawer -->
         <div class="mdl-layout__drawer">
 
-            <span class="mdl-layout-title">DAWN.</span>
+            <span class="mdl-layout-title">
+                <a href="#top" id="menu-title">DAWN.</a>
+            </span>
 
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="#vision">Vision</a>
-                <a class="mdl-navigation__link" href="#services">Services</a>
+                <a class="mdl-navigation__link" href="#hardware">Hardware</a>
+                <a class="mdl-navigation__link" href="#os">OS</a>
+                <a class="mdl-navigation__link" href="#blockchains">Blockchains</a>
+                <a class="mdl-navigation__link" href="#applications">Applications</a>
             </nav>
 
         </div>
@@ -145,69 +153,143 @@
 
                 </div>
 
-                <!-- SERVICES -->
-                <div id="services">
+                <!-- HARDWARE -->
+                <div id="hardware">
 
-                    <div class="services-content">
+                    <div class="hardware-content">
 
-                        <h3>SERVICES</h3>
+                        <h3>HARDWARE</h3>
 
                         <blockquote>Reducing cost while pushing up services quality.</blockquote>
 
-                        <h5>Dawn hardware</h5>
-
                         <p>Providing highly-efficient low-cost hardware designed for a P2P Internet infrastructure.</p>
 
-                        <h6>Dawn R1</h6>
+                        <div id="hardware-cards">
 
-                        <p>Cheap and efficient router for multi-purpose around 350$.</p>
+                            <div class="mdl-cell mdl-cell--5-col-desktop mdl-cell--5-col-tablet mdl-cell--3-col-phone">
 
-                        <ul>
-                            <li>4 Cores 2.4GHz+</li>
-                            <li>4GB RAM (Up to 8GB)</li>
-                            <li>64GB SSD (Optionally with a 4To HDD)</li>
-                            <li>802.11ac x2 MIMO</li>
-                            <li>Dawn OS</li>
-                        </ul>
+                                <div class="mdl-card">
 
-                        <p>Designed for a master node usage.</p>
+                                    <h5>Dawn R1</h5>
 
-                        <h6>Dawn OP1</h6>
+                                    <div class="mdl-card__supporting-text">
+                                        <p>High cost–performance ratio router designed for a master node and multi-purpose usage around 350$.</p>
+                                        <ul>
+                                            <li>4 Cores 2.4GHz+</li>
+                                            <li>4GB RAM (Up to 8GB)</li>
+                                            <li>64GB SSD (Optionally with a 4To HDD)</li>
+                                            <li>802.11ac x2 MIMO</li>
+                                            <li>Dawn OS</li>
+                                        </ul>
+                                    </div>
 
-                        <p>Cheap and efficient PC for multi-purpose around 35$.</p>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                            Take a look
+                                        </button>
+                                    </div>
 
-                        <ul>
-                            <li>4 Cores 1GHz+</li>
-                            <li>1GB DDR3</li>
-                            <li>8GB to 64GB</li>
-                            <li>10/100M Ethernet RJ45</li>
-                            <li>Dawn OS</li>
-                        </ul>
+                                </div>
 
-                        <p>Designed for a client usage.</p>
+                            </div>
 
-                        <h5>Dawn software</h5>
+                            <div class="mdl-cell mdl-cell--5-col-desktop mdl-cell--5-col-tablet mdl-cell--3-col-phone">
 
-                        <h6>Dawn OS</h6>
+                                <div class="mdl-card">
 
-                        <p>Design for security and smooth running.</p>
+                                    <h5>Dawn OP1</h5>
 
-                        <ul>
-                            <li>Packer</li>
-                            <li>Arch Linux</li>
-                            <li>Wire Guard</li>
-                            <li>Zero Tier</li>
-                            <li>Glog chain *</li>
-                            <li>ID chain *</li>
-                            <li>File chain *</li>
-                            <li>Dawn client *</li>
-                        </ul>
+                                    <div class="mdl-card__supporting-text">
+                                        <p>High cost–performance ratio mini-PC designed for a client and multi-purpose usage around 35$.</p>
+                                        <ul>
+                                            <li>4 Cores 1GHz+</li>
+                                            <li>1GB DDR3</li>
+                                            <li>8GB to 64GB</li>
+                                            <li>10/100M Ethernet RJ45</li>
+                                            <li>Dawn OS</li>
+                                        </ul>
+                                    </div>
 
-                        <code>* Optional</code>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                            Take a look
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
 
                 </div>
+
+                <!-- OS -->
+                <div id="os">
+
+                    <div class="os-content">
+
+                        <h3>OPERATING SYSTEM</h3>
+
+                        <p>Providing highly-efficient simple and minimalist OS more secure than 95% of OS.</p>
+
+                        <div id="os-card">
+
+                            <div class="mdl-card">
+
+                                <h5>Dawn OS</h5>
+
+                                <div class="mdl-card__supporting-text">
+                                    <p>Design for security and smooth running.</p>
+
+                                    <ul>
+                                        <li>Packer</li>
+                                        <li>Arch Linux</li>
+                                        <li>Wire Guard</li>
+                                        <li>Zero Tier</li>
+                                        <li>Glog chain *</li>
+                                        <li>ID chain *</li>
+                                        <li>File chain *</li>
+                                        <li>Dawn client *</li>
+                                    </ul>
+
+                                    <img src="images/archlinux-logo-black-90dpi.svg.png">
+
+                                </div>
+
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                        Take a look
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- BLOCKCHAINS -->
+
+                <div id="blockchains">
+
+                    <div class="blockchains-content">
+
+                        <h3>BLOCKCHAINS</h3>
+
+                        <p>Providing highly-efficient simple and minimalist OS more secure than 95% of OS.</p>
+
+                        <div id="blockchains-card">
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
 
             </div>
         </main>
