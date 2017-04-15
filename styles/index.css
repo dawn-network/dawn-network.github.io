@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* TOOLBAR */
+#toolbar {
+    background-color: #111;
+    color: #eee;
+}
+
+#toolbar .mdl-navigation__link, #toolbar .mdl-layout__drawer-button {
+    color: #eee;
+}
+
+#title {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* HEADER */
+#header {
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+#header .header-text {
+    margin: auto;
+    max-width: 800px;
+    margin-bottom: 32px;
+}
+
+#header .header-actions {
+    text-align: center;
+}
+
+/* INTRODUCTION */
+#introduction {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.three-cards {
+    padding: auto;
+}
+
+.mdl-card, .three-cards , i{
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+/* VISION */
+#vision {
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    background-color: #eee;
+    color: #333;
+}
+
+#vision .vision-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* SERVICES */
+#services {
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: #eee;
+}
+
+#services .services-content {
+    max-width: 800px;
+    margin: auto;
+}
