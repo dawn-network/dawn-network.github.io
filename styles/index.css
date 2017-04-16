@@ -82,7 +82,6 @@ html, body {
     background-image: url("../images/dark-md.jpg");
     background-size: cover;
     background-attachment: fixed;
-
     color: #eee;
 }
 
@@ -91,17 +90,17 @@ html, body {
     margin: auto;
 }
 
-#hardware-cards {
+.hardware-cards {
     text-align: center;
     width: 100%;
 }
 
-#hardware-cards .mdl-cell {
+.hardware-cards .mdl-cell {
     text-align: left;
-    display: inline-block;
+    display: inline;
 }
 
-#hardware-cards .mdl-card h5{
+.hardware-cards .mdl-card h5{
     color: #333333;
     padding-left: 16px;
 }
@@ -122,22 +121,21 @@ html, body {
     margin: auto;
 }
 
-#os-card .mdl-card {
+.os-card .mdl-card {
     width: 100%;
 }
 
-#os-card .mdl-card img {
+.os-card .mdl-card img {
     max-width: 21.5%;
 }
 
-#os-card .mdl-card h5 {
+.os-card .mdl-card h5 {
     color: #333333;
     padding-left: 16px;
 }
 
 
 /* BLOCKCHAINS */
-
 #blockchains {
     width: 100%;
     padding-top: 32px;
@@ -151,15 +149,51 @@ html, body {
 }
 
 /* APPLICATIONS */
-
 #applications {
     width: 100%;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    background-image: url("../images/grey-yellow-md.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     color: #eee;
 }
 
 .applications-content {
     max-width: 800px;
     margin: auto;
+}
+
+.applications-cards {
+    text-align: center;
+    width: 100%;
+}
+
+.applications-cards .mdl-cell {
+    text-align: left;
+    display: inline;
+}
+
+.applications-cards .mdl-card h5{
+    color: #333333;
+    padding-left: 16px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #111;
+}
+
+@media (max-width: 832px) {
+
+    #header, #hardware, #applications {
+        background-attachment: inherit;
+        background-origin: center, center;
+    }
+
+    .header-text, .vision-content, .hardware-content, .os-content, .blockchains-content, .applications-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
