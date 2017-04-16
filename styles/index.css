@@ -3,6 +3,49 @@ html, body {
     padding: 0;
 }
 
+/* THEME */
+
+.mdl-card {
+    background: #343434;
+    color: #ddd;
+    margin-right: 16px;
+    margin-left: 16px;
+    transition: all .3s ease-out;
+}
+
+.mdl-card:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.4);
+    transition: all .15s ease-in;
+}
+
+.mdl-card__supporting-text {
+    color: #c7c7c7;
+}
+
+.mdl-card__actions {
+    text-align: right;
+}
+
+.mdl-card--border {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.two-cards {
+    text-align: left;
+    display: inline;
+    max-width: 800px;
+}
+
+.two-cards .mdl-card {
+    width: calc(50% - 34px);
+}
+
+.two-cards .mdl-card h5{
+    padding-left: 16px;
+}
+
 /* TOOLBAR */
 #toolbar {
     background-color: #111;
@@ -47,6 +90,12 @@ html, body {
 #introduction {
     padding-top: 32px;
     padding-bottom: 32px;
+
+    background-color: rgba(42, 42, 42, .8);
+    color: #333;
+}
+
+.introduction-content {
     max-width: 1100px;
     margin: auto;
     text-align: center;
@@ -63,8 +112,7 @@ html, body {
     padding-top: 32px;
     padding-bottom: 32px;
 
-    background-color: #eee;
-    color: #333;
+    color: #eee;
 }
 
 #vision .vision-content {
@@ -90,21 +138,6 @@ html, body {
     margin: auto;
 }
 
-.hardware-cards {
-    text-align: center;
-    width: 100%;
-}
-
-.hardware-cards .mdl-cell {
-    text-align: left;
-    display: inline;
-}
-
-.hardware-cards .mdl-card h5{
-    color: #333333;
-    padding-left: 16px;
-}
-
 /* OS */
 
 #os {
@@ -112,8 +145,8 @@ html, body {
     padding-top: 32px;
     padding-bottom: 32px;
 
-    background-color: #eee;
-    color: #333;
+    background-color: rgba(42, 42, 42, .8);
+    color: #eee;
 }
 
 .os-content {
@@ -122,7 +155,7 @@ html, body {
 }
 
 .os-card .mdl-card {
-    width: 100%;
+    width: calc(100% - 34px);
 }
 
 .os-card .mdl-card img {
@@ -130,7 +163,6 @@ html, body {
 }
 
 .os-card .mdl-card h5 {
-    color: #333333;
     padding-left: 16px;
 }
 
@@ -165,24 +197,9 @@ html, body {
     margin: auto;
 }
 
-.applications-cards {
-    text-align: center;
-    width: 100%;
-}
-
-.applications-cards .mdl-cell {
-    text-align: left;
-    display: inline;
-}
-
-.applications-cards .mdl-card h5{
-    color: #333333;
-    padding-left: 16px;
-}
-
 /* FOOTER */
 .footer {
-    background-color: #111;
+    background-color: #222;
 }
 
 @media (max-width: 832px) {
@@ -195,5 +212,11 @@ html, body {
     .header-text, .vision-content, .hardware-content, .os-content, .blockchains-content, .applications-content {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .two-cards .mdl-card {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        width: calc(100% - 34px);
     }
 }
